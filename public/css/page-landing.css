@@ -25,7 +25,7 @@
     justify-content: center;
     margin: auto;
     transition: background .2s;
-    animation-delay: 250ms;
+    animation-delay: 400ms;
 
 }
 
@@ -37,11 +37,11 @@
 
 /* Separando elementos para trabalhar o tempo de aparecimento de cada um deles */
 #logo {
-    animation-delay: 50ms;
+    animation-delay: 100ms;
 }
 
 .location{
-    animation-delay: 100ms;
+    animation-delay: 200ms;
 }
 
 main h1 {
@@ -50,7 +50,8 @@ main h1 {
 }
 
 .visit p{
-    animation-delay: 200ms;
+    margin-top: 2rem;
+    animation-delay: 300ms;
 }
 
 
