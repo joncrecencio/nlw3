@@ -30,3 +30,5 @@ L.marker([-23.9616031,-46.378863], { icon })
 function selectImage(event){
     console.log("cliquei")
 }
+
+// parei em 2:48:56
