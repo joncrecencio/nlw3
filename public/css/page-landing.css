@@ -62,7 +62,8 @@ main h1 {
         background: url("../images/bg.svg") no-repeat;
         background-position: 80%;
         background-size: clamp(21rem, 49vw, 51rem);
-        padding: 4rem 2rem;
+        padding: 1rem 2rem;
+        margin: 0 auto;
     }
 
     header {

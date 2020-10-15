@@ -41,7 +41,8 @@
 
                     <div class="map-container">
                         <div id="mapid"></div>
-
+                            <input type="hidden" name="lat">
+                            <input type="hidden" name="lng">
                         <footer>
                             <a href="" id="select-point" >
                                 Clique no mapa para adicionar a localização
@@ -71,14 +72,14 @@
                             
                             <div class="new-upload">
                                 <input name="images" placeholder="Cole o link da foto aqui" required>
-                                <span>
+                                <span onclick="deleteField(event)">
                                     <img src="./public/images/remove-file.svg" alt="Remover foto">
                                 </span>
                             </div><!--new-upload-->
 
                         </div><!--images-upload-->
 
-                        <button type="button">
+                        <button type="button" onclick="addPhotoField()">
                             <img src="./public/images/add-file.svg" alt="Adicionar nova imagem">
                         </button>
                     </div><!--input-block-->
@@ -104,8 +105,8 @@
                         <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required>
 
                         <div class="button-select">
-                            <button type="button" class="active">SIM</button>
-                            <button type="button">NÃO</button>
+                            <button data-value="1" onclick="toggleSelect(event)" type="button" class="active">SIM</button>
+                            <button data-value="0" onclick="toggleSelect(event)" type="button">NÃO</button>
                         </div><!--button-select-->
 
                         <button type="submit" class="primary-button">
