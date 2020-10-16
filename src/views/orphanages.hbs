@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,11 +33,19 @@
             </footer>
         </aside>
 
-        <div id="mapid" class="animate-appear">
-            <a href="create-orphanage" class="create-orphanage" title="Cadastre um orfanato">
-                <img src="/images/plus.svg" alt="Criar orfanato">
-            </a>
-        </div><!--mapid-->
+        <div id="mapid" class="animate-appear"></div><!--mapid-->
+
+            <div class="orphanages">
+                {{#each orphanages}}
+                <span hidden data-id = "{{this.id}}" data-name = "{{this.name}}" data-lat = "{{this.lat}}" data-lng = "{{this.lng}}">
+            
+                </span>
+                {{/each}}
+
+                    <a href="/create-orphanage" class="create-orphanage" title="Cadastre um orfanato">
+                        <img src="/images/plus.svg" alt="Criar orfanato">
+                    </a>
+            </div><!--orphanages-->  
     </div><!--page-orphanages-->
 
     <script src="/scripts/page-orphanages.js"></script>
