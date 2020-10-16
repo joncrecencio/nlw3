@@ -61,7 +61,7 @@ main h1 {
     #container{
         background: url("../images/bg.svg") no-repeat;
         background-position: 80%;
-        background-size: clamp(21rem, 49vw, 51rem);
+        background-size: clamp(21rem, 43vw, 45rem);
         padding: 1rem 2rem;
         margin: 0 auto;
     }
