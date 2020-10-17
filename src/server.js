@@ -5,6 +5,8 @@ const pages = require('./pages')
 const server = express()
 
 server
+// utilizar req do boy
+.use(express.urlencoded({extended:true}))
 
 // Utilizando arquivos staticos
 .use(express.static('public'))
@@ -18,6 +20,7 @@ server
 .get('/orphanage', pages.orphanage)
 .get('/orphanages', pages.orphanages)
 .get('/create-orphanage', pages.createOrphanage)
+.post('/save-orphanage', pages.saveOrphanage)
 
 // Ligar o servidor
 server.listen(5500)
