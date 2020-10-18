@@ -97,7 +97,7 @@ function validate(event){
     const longitude = document.querySelector('[name=lng]').value
 
     if(latitude == "" && longitude == ""){
-        alert("Selecione um ponto no mapa")
+        alert("Selecione um ponto no mapa!")
         event.preventDefault()
     }
 }
