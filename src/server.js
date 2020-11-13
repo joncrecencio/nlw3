@@ -9,7 +9,7 @@ server
 .use(express.urlencoded({extended:true}))
 
 // Utilizando arquivos staticos
-.use(express.static('public'))
+    .use(express.static('public'))
 
 // configurar Template Engine
 .set('views', path.join(__dirname, "views"))

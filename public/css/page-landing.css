@@ -87,7 +87,7 @@ main h1 {
         font-weight: bold;
         line-height: .90;
 
-        margin: clamp(5%, 4vh, 7%) 0 4rem ;
+        margin: clamp(5%, 4vh, 7%) 0 4rem;
         width: min(300px, 80%);
     }
 
